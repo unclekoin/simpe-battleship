@@ -56,6 +56,7 @@ btn.addEventListener('click', () => {
   } else {
     audioErr.play();
     scoreboard.textContent = 'Введите корректное значение'
+    setTimeout(delayAfterBang, 1500);
   }
 
   if (hits.length === 3) {
